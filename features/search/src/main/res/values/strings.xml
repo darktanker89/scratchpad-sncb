@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="searchDepartureSearchBoxHint">Search Departure</string>
+    <string name="searchArrivalSearchBoxHint">Search Arrival</string>
+</resources>

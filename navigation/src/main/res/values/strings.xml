@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--region features modules -->
+    <string name="title_about">About</string>
+    <string name="title_announcements">Announcement</string>
+    <string name="title_search">Search</string>
+    <!--endregion-->
+</resources>

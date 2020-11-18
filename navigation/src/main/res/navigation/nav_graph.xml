@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/search">
+
+    <dialog
+        android:id="@+id/search"
+        android:name="be.johnkichi.sampleapp.features.search.SearchFragment"
+        tools:layout="@layout/search_fragment" />
+
+    <fragment
+        android:id="@+id/fatsearch"
+        android:name="be.johnkichi.sampleapp.features.search.FatSearchFragment"
+        tools:layout="@layout/fat_search_fragment" />
+
+    <fragment
+        android:id="@+id/announcements"
+        android:name="be.kichi.sampleapp.features.announcements.list.AnnouncementsFragment"
+        tools:layout="@layout/announcements_fragment">
+
+        <action
+            android:id="@+id/go_to_announcementsDetailFragment"
+            app:destination="@id/announcementsDetail"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/announcements" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/announcementsDetail"
+        android:name="be.kichi.sampleapp.features.announcements.detail.AnnouncementsDetailFragment"
+        tools:layout="@layout/announcements_fragment">
+        <argument
+            android:name="disturbance_id"
+            app:argType="string" />
+    </fragment>
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/featured"-->
+    <!--        android:name="com.kienht.dagger.hilt.feature.list.FeatureListFragment"-->
+    <!--        tools:layout="@layout/feature_list_fragment" />-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/about"-->
+    <!--        android:name="be.johnkichi.sampleapp.features.about.AboutFragment"-->
+    <!--        tools:layout="@layout/fragment_about" />-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/announcements"-->
+    <!--        android:name="be.kichi.sampleapp.features.announcements.list.AnnouncementsFragment"-->
+    <!--        tools:layout="@layout/announcements_fragment" />-->
+</navigation>
