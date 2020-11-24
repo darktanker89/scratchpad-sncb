@@ -1,14 +1,15 @@
 
 Merely a scratchpad (compile work, doesn't do much)
 
-getting Hilt to work in a dynamic features context
-check those new restrictions with gradle and libs used in multiple features module
-navigation with features module
-gradle lib updates tasks
-motionlayout
-compose
+- getting Hilt to work in a dynamic features context
+- check those new restrictions with gradle and libs used in multiple features module
+- navigation with features module
+- gradle lib updates tasks
+- motionlayout
+- compose
+- no databinding as current AS deosn't support compose in favor of compose
 
-bit of architecture since we are not savages
+bits of architecture since we are not savages
 too many tests since railApi is wildly bad typed and inconsistent, had to be overly precautious..
 
 Use a recent **AS Canary**, Build cache tends to corrupt frequenly, be ready to nuke AS every hour or so
